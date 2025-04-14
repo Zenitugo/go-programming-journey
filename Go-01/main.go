@@ -22,3 +22,21 @@ func main() {
 }
 
 
+// Task 2
+package main
+import "fmt"
+
+func main() {
+    number_of_servers := 10
+    server_groups := number_of_servers / 4
+    fmt.Printf("The total number of servers is, %d. The number of groups when servers are arrangedin the cluster of 4 is, %d", number_of_servers, server_groups)
+}
+
+// Polished version from Grok
+package main
+import "fmt"
+func main() {
+    number_of_servers := 10
+    server_groups := number_of_servers / 4
+    fmt.Printf("The total number of servers is %d. The number of groups when servers are arranged in clusters of 4 is %d.\n", number_of_servers, server_groups)
+}
