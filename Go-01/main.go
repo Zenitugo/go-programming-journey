@@ -104,3 +104,23 @@ func main() {
         fmt.Printf("Unknown Status\n")
     }
 }
+
+
+// Mini Project 3
+
+package main
+
+import "fmt"
+
+func main() {
+    var port int
+    
+    fmt.Print("What is the port number? ")
+    fmt.Scan(&port)
+
+    if port >=1 && port <= 65535{
+        fmt.Printf("Valid port\n")
+    } else {
+        fmt.Printf("Invalid port\n")
+    }
+}
