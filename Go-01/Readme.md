@@ -108,3 +108,9 @@ Print both, rounded to 1 decimal place (use %.1f).
 2: "Server offline".
 Else: "Unknown status".
 Print the message.
+
+
+## Mini-Project 3: Port Validator
+1. Ask for a port number (integer, use fmt.Scan()).
+2. Check if it’s valid (1-65535).
+3. Print "Valid port" or "Invalid port".
