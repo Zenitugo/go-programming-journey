@@ -72,3 +72,39 @@ fmt.Scan(&input)
 - float32, float64: floating-point numbers
 
 - complex64, complex128: complex numbers
+
+# Tasks
+
+## Task 1: Hello Greeter
+
+**Write a program that:**
+- Declares a variable for your name (string).
+- Declares a variable for your age (integer).
+- Prints: "Hello, [name]! You are [age] years
+
+
+## Task 2: Server Count
+**Write a program that:**
+- Declares a variable for the number of servers (integer).
+- Calculates how many can be grouped into clusters of 4 (use /).
+- Prints both numbers.
+
+## Task 3: Uptime Printer
+**Write a program that:**
+- Takes user input for uptime in hours (integer, use fmt.Scan()).
+- Prints it with a message
+
+
+## Mini-Project 1: Memory Converter
+Ask for memory in MB (float64, use fmt.Scan()).
+Convert to GB (divide by 1024).
+Print both, rounded to 1 decimal place (use %.1f).
+
+
+## Mini-Project 2: Status Checker
+- Ask for a server status code (integer, use fmt.Scan()).
+- Map it to a message:
+1: "Server online".
+2: "Server offline".
+Else: "Unknown status".
+Print the message.
