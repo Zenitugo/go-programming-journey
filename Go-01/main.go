@@ -215,3 +215,21 @@ func main() {
 
     fmt.Printf("Network latency: %.2f milliseconds, Category: %s\n", network_latency, status)
 }
+
+// Polished version of mini project 6 from Grok
+package main
+import "fmt"
+func main() {
+    var network_latency float64
+    fmt.Print("Enter network latency in ms: ")
+    fmt.Scan(&network_latency)
+    var category string
+    if network_latency >= 0 && network_latency <= 100 {
+        category = "Excellent"
+    } else if network_latency <= 200 {
+        category = "Acceptable"
+    } else {
+        category = "Poor"
+    }
+    fmt.Printf("Latency: %.2f ms, Category: %s\n", network_latency, category)
+}
