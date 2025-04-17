@@ -189,3 +189,29 @@ func main(){
 
     fmt.Printf("Backup size: %d MB, Frequency: %s\n", backup_size, backup_frequency)
 }
+
+
+// Mini Project 6
+
+package main
+
+import "fmt"
+
+func main() {
+    var network_latency float64
+
+    fmt.Print("Enter network latency in milliseconds: ")
+    fmt.Scan(&network_latency)
+
+    var status string
+
+    if network_latency >=0 && network_latency <= 100 {
+        status = "Excellent"
+    } else if network_latency >= 101 && network_latency <= 200 {
+        status = "Acceptable"
+    } else {
+        status = "Poor"
+    }
+
+    fmt.Printf("Network latency: %.2f milliseconds, Category: %s\n", network_latency, status)
+}
