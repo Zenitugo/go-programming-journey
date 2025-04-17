@@ -124,3 +124,19 @@ func main() {
         fmt.Printf("Invalid port\n")
     }
 }
+
+
+// Polished Version froom Grok for mini project 3
+
+package main
+import "fmt"
+func main() {
+    var port int
+    fmt.Print("Enter port number: ")
+    fmt.Scan(&port)
+    if port >= 1 && port <= 65535 {
+        fmt.Println("Valid port")
+    } else {
+        fmt.Println("Invalid port")
+    }
+}
