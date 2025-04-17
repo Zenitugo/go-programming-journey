@@ -73,6 +73,17 @@ fmt.Scan(&input)
 
 - complex64, complex128: complex numbers
 
+
+## Difference between Printf and Println
+
+| Feature              | `fmt.Println()`           | `fmt.Printf()`                            |
+|----------------------|---------------------------|-------------------------------------------|
+| Adds newline         | Yes                       | No (unless you add `\n`)                  |
+| Supports formatting  | No                        | Yes (`%s`, `%d`, `%.2f`, etc.)            |
+| Multiple arguments   | Yes (space-separated)     | Yes (with format string)                 |
+|
+
+
 # Tasks
 
 ## Task 1: Hello Greeter
@@ -114,3 +125,32 @@ Print the message.
 1. Ask for a port number (integer, use fmt.Scan()).
 2. Check if it’s valid (1-65535).
 3. Print "Valid port" or "Invalid port".
+
+
+## Mini-Project 4: Disk Space Checker
+**Description**: Write a program that takes disk space used (in GB, float64) as input and checks if it’s within a safe threshold. If usage is below 50 GB, it’s “Safe”; 50-100 GB is “Warning”; above 100 GB is “Critical”. Print the usage and status.
+
+**Requirements**:
+
+- Prompt: “Enter disk space used in GB: ”
+- Input: float64 (e.g., 75.5).
+- Output: Usage (1 decimal) and status.
+
+
+## Mini-Project 5: Backup Frequency Planner
+**Description**: Write a program that takes the size of a backup (in MB, int) and suggests a backup frequency. If size is 0-1000 MB, suggest “Daily”; 1001-5000 MB, “Weekly”; above 5000 MB, “Monthly”. Print the size and frequency.
+
+**Requirements**:
+
+- Prompt: “Enter backup size in MB: ”
+- Input: int (e.g., 2500).
+- Output: Size and frequency.
+
+## Mini-Project 6: Network Latency Monitor
+**Description**: Write a program that takes network latency (in milliseconds, float64) and categorizes it. If latency is 0-100 ms, it’s “Excellent”; 101-200 ms, “Acceptable”; above 200 ms, “Poor”. Print latency (2 decimals) and category.
+
+**Requirements**:
+
+- Prompt: “Enter network latency in ms: ”
+- Input: float64 (e.g., 150.75).
+- Output: Latency (2 decimals) and category.
