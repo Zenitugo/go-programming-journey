@@ -164,3 +164,28 @@ func main() {
     }
     fmt.Printf("Disk space usage is: %.1f GB, Status is: %s\n", disk_space_used, status)
 }
+
+
+// Mini Project 5
+package main
+
+import "fmt"
+
+func main(){
+    var backup_size int
+
+    fmt.Print("Enter the backup size in MB: ")
+    fmt.Scan(&backup_size)
+
+    var backup_frequency string
+
+    if backup_size >= 0 && backup_size <= 1000 {
+        backup_frequency = "Daily"
+    } else if backup_size >= 1001 && backup_size <= 5000 {
+        backup_frequency = "Weekly"
+    } else {
+        backup_frequency = "Monthly"
+    }
+
+    fmt.Printf("Backup size: %d MB, Frequency: %s\n", backup_size, backup_frequency)
+}
