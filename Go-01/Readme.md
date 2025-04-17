@@ -154,3 +154,24 @@ Print the message.
 - Prompt: “Enter network latency in ms: ”
 - Input: float64 (e.g., 150.75).
 - Output: Latency (2 decimals) and category.
+
+
+
+## Mini-Project 7: CPU Temperature Monitor
+**Description**: Write a program that takes a CPU temperature (in Celsius, float64) and categorizes it. If the temperature is 0-60°C, it’s “Normal”; 61-80°C, “Warm”; above 80°C, “Overheating”. Print the temperature (1 decimal) and category.
+
+**Requirements**:
+
+- Prompt: “Enter CPU temperature in Celsius: ”
+- Input: float64 (e.g., 72.5).
+- Output: Temperature (1 decimal) and category.
+
+
+## Mini-Project 8: Log Level Classifier
+**Description**: Write a program that takes a log level code (integer) and maps it to a severity. Code 1 is “Info”; 2 is “Warning”; 3 is “Error”; anything else is “Unknown”. Print the code and severity.
+
+**Requirements**:
+
+- Prompt: “Enter log level code: ”
+- Input: int (e.g., 2).
+- Output: Code and severity.
