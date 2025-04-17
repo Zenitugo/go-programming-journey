@@ -84,3 +84,23 @@ quotient := memory / 1024
 fmt.Printf("The memory in GB is: %.1f\n", quotient)
 
 }
+
+
+// Mini Project 2
+
+package main
+import "fmt"
+
+func main() {
+    var status int
+    fmt.Print("What is the server status code? ")
+    fmt.Scan(&status)
+
+    if status == 1{
+        fmt.Printf("Server Online\n")
+    } else if status == 2 {
+        fmt.Printf("Server Offline\n")
+    }else {
+        fmt.Printf("Unknown Status\n")
+    }
+}
