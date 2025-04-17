@@ -140,3 +140,27 @@ func main() {
         fmt.Println("Invalid port")
     }
 }
+
+// Mini Project 4
+
+package main
+
+import "fmt"
+
+func main() {
+    var disk_space_used float64
+
+    fmt.Print("What is the disk space used in GB? ")
+    fmt.Scan(&disk_space_used)
+
+    var status string 
+
+    if disk_space_used < 50{
+        status = "Safe"
+    } else if disk_space_used >= 50 && disk_space_used <= 100 {
+        status = "Warning"
+    } else {
+        status = "Critical"
+    }
+    fmt.Printf("Disk space usage is: %.1f GB, Status is: %s\n", disk_space_used, status)
+}
