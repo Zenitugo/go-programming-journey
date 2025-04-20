@@ -284,3 +284,29 @@ func main() {
 
 	fmt.Printf("The log level code: %d and the severity: %s\n", log_level_code, severity)
 }
+
+
+
+
+// Mini Project 9
+package main
+
+import "fmt"
+
+func main() {
+	var memory_allocation int
+	fmt.Print("Enter the memory allocation in MB: ")
+	fmt.Scan(&memory_allocation)
+
+	var status string
+
+	if memory_allocation >= 0 && memory_allocation <= 512 {
+		status = "Low"
+	} else if memory_allocation <= 2048 {
+		status = "Moderate"
+	} else {
+		status = "High"
+	}                 
+	
+	fmt.Printf("The memory allocation is %d MB which means it is %s\n", memory_allocation, status)
+}
