@@ -257,3 +257,30 @@ func main() {
 
 	fmt.Printf("The CPU temperature is %.1f °C, It is currently %s\n", cpu_temp, status)
 }
+
+
+// Mini project 8
+package main
+
+import "fmt"
+
+func main() {
+	var log_level_code int
+
+	fmt.Print("Enter the log level code: ")
+	fmt.Scan(&log_level_code)
+
+	var severity string
+
+	if log_level_code == 1 {
+		severity = "Info"
+	} else if log_level_code == 2 {
+		severity = "Warning"
+	} else if log_level_code == 3{
+		severity = "Error"
+	} else {
+		severity = "Unknown"
+	}
+
+	fmt.Printf("The log level code: %d and the severity: %s\n", log_level_code, severity)
+}
