@@ -233,3 +233,27 @@ func main() {
     }
     fmt.Printf("Latency: %.2f ms, Category: %s\n", network_latency, category)
 }
+
+
+
+// Mini Project 7
+package main
+
+import "fmt"
+
+func main() {
+	var cpu_temp float64
+	fmt.Print("Enter the CPU temperature in celsius: ")
+	fmt.Scan(&cpu_temp)
+
+	var status string
+	if cpu_temp >= 0 && cpu_temp <= 60 {
+		status = "Normal"
+	} else if cpu_temp <= 80 {
+		status = "Warm"
+	} else {
+		status = "Overheating"
+	}
+
+	fmt.Printf("The CPU temperature is %.1f °C, It is currently %s\n", cpu_temp, status)
+}
