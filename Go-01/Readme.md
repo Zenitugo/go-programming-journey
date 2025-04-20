@@ -175,3 +175,15 @@ Print the message.
 - Prompt: “Enter log level code: ”
 - Input: int (e.g., 2).
 - Output: Code and severity.
+
+
+
+
+## Mini-Project 9: Memory Allocation Validator
+**Description**: Write a program that takes a memory allocation (in MB, int) and categorizes it. If the allocation is 0-512 MB, it’s “Low”; 513-2048 MB, “Moderate”; above 2048 MB, “High”. Print the allocation and category.
+
+**Requirements**:
+
+- Prompt: “Enter memory allocation in MB: ”
+- Input: int (e.g., 1024).
+- Output: Allocation and category.
